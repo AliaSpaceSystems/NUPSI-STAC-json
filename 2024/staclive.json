@@ -900,12 +900,32 @@
   "description": "Live STAC catalog generated from a shapefile",
   "links": [],
   "properties": {
-    "datetime": "2024-07-05T10:24:01.097078Z"
+    "datetime": "2024-07-05T10:31:02.928397Z"
   },
   "assets": {
-    "data": {
-      "href": "path/to/related/data",
-      "type": "application/vnd.geo+json"
+    "B02": {
+      "title": "Band 2 (blue) BOA reflectance",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "href": "https://nuts.s3.gra.io.cloud.ovh.net/SHAPED-MOSAIC/SENTINEL-2/S2_L2A_N0510_L3_P02/2024/02/01/NUTS0/IT/S2_L2A_N0510_L3_P02_20240201T000000_20240301T000000_NUTS0_IT_B02_10m.tiff",
+      "roles": [
+        "data"
+      ],
+      "gsd": 10,
+      "eo:bands": [
+        {
+          "name": "B02",
+          "common_name": "Blue",
+          "center_wavelength": 0.458
+        }
+      ],
+      "raster:bands": [
+        {
+          "data_type": "float32",
+          "spatial_resolution": 10,
+          "bits_per_sample": 32,
+          "nodata": "nan"
+        }
+      ]
     }
   }
 }
