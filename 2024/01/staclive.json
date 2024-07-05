@@ -919,7 +919,7 @@
     "B02": {
       "title": "Band 2 (blue) BOA reflectance",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "href": "https://nuts.s3.gra.io.cloud.ovh.net/SHAPED-MOSAIC/SENTINEL-2/S2_L2A_N0510_L3_P02/2024/02/01/NUTS0/IT/S2_L2A_N0510_L3_P02_20240201T000000_20240301T000000_NUTS0_IT_B02_10m.tiff",
+      "href": "https://k8s.alia-space.com/stacserver/catalogs/2024/01/vrtlive.vrt",
       "roles": [
         "data"
       ],
