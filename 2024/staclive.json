@@ -900,7 +900,20 @@
   "description": "Live STAC catalog generated from a shapefile",
   "links": [],
   "properties": {
-    "datetime": "2024-07-05T10:31:02.928397Z"
+    "datetime": "2024-07-05T10:35:00.366581Z",
+    "constellation": "sentinel-2",
+    "instruments": [
+      "msi"
+    ],
+    "gsd": 10,
+    "view:off_nadir": 0,
+    "proj:epsg": 32633,
+    "sentinel:utm_zone": 33,
+    "sentinel:latitude_band": "S",
+    "sentinel:grid_square": "VB",
+    "sentinel:sequence": "0",
+    "sentinel:product_id": "S2_L2A_N0510_L3_P02_20240201T000000_20240301T000000_NUTS0_IT",
+    "sentinel:valid_cloud_cover": "true"
   },
   "assets": {
     "B02": {
