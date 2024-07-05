@@ -8,11 +8,6 @@
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
   ],
   "id": "Fiuggi",
-  "description": "Live STAC catalog generated from a shapefile",
-  "links": [],
-  "properties": {
-    "datetime": "2024-07-05T10:21:48.831012Z"
-  },
   "bbox": [
     13.1743602,
     41.7663366,
@@ -901,6 +896,11 @@
         ]
       ]
     ]
+  },
+  "description": "Live STAC catalog generated from a shapefile",
+  "links": [],
+  "properties": {
+    "datetime": "2024-07-05T10:24:01.097078Z"
   },
   "assets": {
     "data": {
