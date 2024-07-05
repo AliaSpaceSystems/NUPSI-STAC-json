@@ -3,6 +3,7 @@
   "id": "example-catalog",
   "description": "Example STAC catalog generated from a shapefile",
   "links": [],
+  "type":"Feature",
   "features": [
     {
       "type": "Feature",
