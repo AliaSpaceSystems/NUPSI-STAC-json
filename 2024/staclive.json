@@ -11,8 +11,14 @@
   "description": "Live STAC catalog generated from a shapefile",
   "links": [],
   "properties": {
-    "datetime": "2024-07-05T10:16:04.894810Z"
+    "datetime": "2024-07-05T10:21:48.831012Z"
   },
+  "bbox": [
+    13.1743602,
+    41.7663366,
+    13.2612873,
+    41.8394054
+  ],
   "geometry": {
     "type": "Polygon",
     "coordinates": [
@@ -898,7 +904,7 @@
   },
   "assets": {
     "data": {
-      "href": "https://nuts.s3.gra.io.cloud.ovh.net/SHAPED-MOSAIC/SENTINEL-2/S2_L2A_N0510_L3_P02/2024/02/01/NUTS0/IT/S2_L2A_N0510_L3_P02_20240201T000000_20240301T000000_NUTS0_IT_B02_10m.tiff",
+      "href": "path/to/related/data",
       "type": "application/vnd.geo+json"
     }
   }
