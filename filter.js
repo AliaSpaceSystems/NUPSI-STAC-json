@@ -19,23 +19,25 @@ function removeKeyIfCondition(jsonData, keysToRemove, conditionKey, conditionVal
 
   keysToRemove.forEach((targetKey) => {
     if (jsonData['assets'].hasOwnProperty(targetKey)) {
-	if (jsonData['assets'][targetKey][conditionKey] === conditionValue) {
-          delete jsonData['assets'][targetKey];
-          //delete jsonData['virtual:assets']['RGD']['href']['#'+targetKey]
-	}
+      if (jsonData['assets'][targetKey][conditionKey] === conditionValue) {
+        //delete jsonData['assets'][targetKey];
+        //delete jsonData['virtual:assets']['RGD']['href']['#'+targetKey]
+        let array=jsonData['virtual:assets']['RGB']['href'].filter((href) => href !== '#'+targetKey)
+        jsonData['virtual:assets']['RGB']['href']=array
+      }
     }
   })
-  
+
 }
 
 // Percorso del file JSON
-const jsonFilePath = './sentinel-2/2024/06/stac_FR.json';
+const jsonFilePath = './sentinel-2/2024/06/stac_EL.json';
 
 // Carica il file JSON
 let jsonData = loadJSONFile(jsonFilePath);
 
 // Array delle chiavi da rimuovere
-const keysToRemove = ['VV', 'VH'];
+const keysToRemove = ['B02', 'B03', 'B04', 'B08', 'B11', 'B12', 'B8A', 'VV', 'VH'];
 
 // Condizione: rimuovi 'targetKey' se 'conditionKey' è uguale a 'someValue'
 removeKeyIfCondition(jsonData, keysToRemove, 'href', '');
