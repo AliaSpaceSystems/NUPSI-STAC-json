@@ -20,8 +20,7 @@ function removeKeyIfCondition(jsonData, keysToRemove, conditionKey, conditionVal
   keysToRemove.forEach((targetKey) => {
     if (jsonData['assets'].hasOwnProperty(targetKey)) {
       if (jsonData['assets'][targetKey][conditionKey] === conditionValue) {
-        //delete jsonData['assets'][targetKey];
-        //delete jsonData['virtual:assets']['RGD']['href']['#'+targetKey]
+        delete jsonData['assets'][targetKey];
         let array=jsonData['virtual:assets']['RGB']['href'].filter((href) => href !== '#'+targetKey)
         jsonData['virtual:assets']['RGB']['href']=array
       }
