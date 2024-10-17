@@ -28,6 +28,8 @@ function removeKeyIfCondition(jsonData, keysToRemove, conditionKey, conditionVal
         delete jsonData['assets'][targetKey];
         let array = jsonData['virtual:assets']['RGB']['href'].filter((href) => href !== '#' + targetKey)
         jsonData['virtual:assets']['RGB']['href'] = array
+      }else{
+        jsonData['virtual:assets']['RGB']['href'].push('#' + targetKey)
       }
     }
   })
@@ -60,9 +62,10 @@ function processAllFilesInFolderRecursively() {
           let jsonData = loadJSONFile(jsonFilePath);
           if (jsonData) {
             let keysToRemove = ['B02', 'B03', 'B04', 'B08', 'B11', 'B12', 'B8A', 'VV', 'VH'];
+            jsonData['virtual:assets']['RGB']['href']=[]
             removeKeyIfCondition(jsonData, keysToRemove, 'href', '');
+            //console.log(jsonData['virtual:assets']['RGB']['href'])
             writeJSONFile(jsonFilePath, jsonData);
-            //console.log('Chiave rimossa (se la condizione era soddisfatta) e file aggiornato.');
           }
         });
       });
