@@ -28,7 +28,7 @@ function removeKeyIfCondition(jsonData, keysToRemove, conditionKey, conditionVal
         delete jsonData['assets'][targetKey];
         let array = jsonData['virtual:assets']['RGB']['href'].filter((href) => href !== '#' + targetKey)
         jsonData['virtual:assets']['RGB']['href'] = array
-      }else{
+      } else {
         jsonData['virtual:assets']['RGB']['href'].push('#' + targetKey)
       }
     }
@@ -61,11 +61,21 @@ function processAllFilesInFolderRecursively() {
           jsonFilePath = _jsonFilePath + '/' + file;
           let jsonData = loadJSONFile(jsonFilePath);
           if (jsonData) {
-            let keysToRemove = ['B02', 'B03', 'B04', 'B08', 'B11', 'B12', 'B8A', 'VV', 'VH'];
+            /*let keysToRemove = ['B02', 'B03', 'B04', 'B08', 'B11', 'B12', 'B8A', 'VV', 'VH'];
             jsonData['virtual:assets']['RGB']['href']=[]
             removeKeyIfCondition(jsonData, keysToRemove, 'href', '');
-            //console.log(jsonData['virtual:assets']['RGB']['href'])
-            writeJSONFile(jsonFilePath, jsonData);
+            writeJSONFile(jsonFilePath, jsonData);*/
+
+            if (jsonData['id'].split('_')[5]) {
+              let STARTDATE = jsonData['id'].split('_')[5].substr(0, 4) + '-' + jsonData['id'].split('_')[5].substr(4, 2) + '-' + jsonData['id'].split('_')[5].substr(6, 2) + "T00:00:00+00:00"
+              let DATETIME = jsonData['id'].split('_')[5].substr(0, 4) + '-' + jsonData['id'].split('_')[5].substr(4, 2) + '-' + jsonData['id'].split('_')[5].substr(6, 2) + "T00:00:00Z"
+              let ENDDATE = jsonData['id'].split('_')[6].substr(0, 4) + '-' + jsonData['id'].split('_')[6].substr(4, 2) + '-' + jsonData['id'].split('_')[6].substr(6, 2) + "T00:00:00+00:00"
+
+              jsonData['properties']['datetime'] = DATETIME
+              jsonData['properties']['start_datetime'] = STARTDATE
+              jsonData['properties']['end_datetime'] = ENDDATE
+              writeJSONFile(jsonFilePath, jsonData);
+            }
           }
         });
       });
