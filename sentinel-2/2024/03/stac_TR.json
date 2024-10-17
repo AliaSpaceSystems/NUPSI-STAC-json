@@ -42,7 +42,7 @@
     ]
   },
   "properties": {
-    "datetime": "2024-01-21T00:00:00Z",
+    "datetime": "2024-03-01T00:00:00Z",
     "constellation": "sentinel-2",
     "instruments": [
       "msi"
@@ -55,7 +55,9 @@
     "sentinel:grid_square": "VB",
     "sentinel:sequence": "0",
     "sentinel:product_id": "S2_L2A_N0510_L3_P02_20240301T000000_20240401T000000_NUTS0_TR",
-    "sentinel:valid_cloud_cover": true
+    "sentinel:valid_cloud_cover": true,
+    "start_datetime": "2024-03-01T00:00:00+00:00",
+    "end_datetime": "2024-04-01T00:00:00+00:00"
   },
   "collection": "sentinel-s2-l2a-cogs",
   "assets": {
@@ -74,7 +76,7 @@
           "full_width_half_max": 0.098
         }
       ],
-      "href": "https://nuts.s3.gra.io.cloud.ovh.net/SHAPED-MOSAIC/SENTINEL-2/S2_L2A_N0510_L3_P02/2024/03/01/NUTS0/TR/S2_L2A_N0510_L3_P02_20240301T000000_20240401T000000_NUTS0_TR_B02_10m_10m.tiff",
+      "href": "https://nuts.s3.gra.io.cloud.ovh.net/SHAPED-MOSAIC/SENTINEL-2/S2_L2A_N0510_L3_P02/2024/03/01/NUTS0/TR/S2_L2A_N0510_L3_P02_20240301T000000_20240401T000000_NUTS0_TR_B02_10m.tiff",
       "raster:bands": [
         {
           "data_type": "float32",
@@ -99,7 +101,7 @@
           "full_width_half_max": 0.045
         }
       ],
-      "href": "https://nuts.s3.gra.io.cloud.ovh.net/SHAPED-MOSAIC/SENTINEL-2/S2_L2A_N0510_L3_P02/2024/03/01/NUTS0/TR/S2_L2A_N0510_L3_P02_20240301T000000_20240401T000000_NUTS0_TR_B03_10m_10m.tiff",
+      "href": "https://nuts.s3.gra.io.cloud.ovh.net/SHAPED-MOSAIC/SENTINEL-2/S2_L2A_N0510_L3_P02/2024/03/01/NUTS0/TR/S2_L2A_N0510_L3_P02_20240301T000000_20240401T000000_NUTS0_TR_B03_10m.tiff",
       "raster:bands": [
         {
           "data_type": "float32",
@@ -124,7 +126,7 @@
           "full_width_half_max": 0.038
         }
       ],
-      "href": "https://nuts.s3.gra.io.cloud.ovh.net/SHAPED-MOSAIC/SENTINEL-2/S2_L2A_N0510_L3_P02/2024/03/01/NUTS0/TR/S2_L2A_N0510_L3_P02_20240301T000000_20240401T000000_NUTS0_TR_B04_10m_10m.tiff",
+      "href": "https://nuts.s3.gra.io.cloud.ovh.net/SHAPED-MOSAIC/SENTINEL-2/S2_L2A_N0510_L3_P02/2024/03/01/NUTS0/TR/S2_L2A_N0510_L3_P02_20240301T000000_20240401T000000_NUTS0_TR_B04_10m.tiff",
       "raster:bands": [
         {
           "data_type": "float32",
@@ -149,7 +151,7 @@
           "full_width_half_max": 0.145
         }
       ],
-      "href": "https://nuts.s3.gra.io.cloud.ovh.net/SHAPED-MOSAIC/SENTINEL-2/S2_L2A_N0510_L3_P02/2024/03/01/NUTS0/TR/S2_L2A_N0510_L3_P02_20240301T000000_20240401T000000_NUTS0_TR_B08_10m_10m.tiff",
+      "href": "https://nuts.s3.gra.io.cloud.ovh.net/SHAPED-MOSAIC/SENTINEL-2/S2_L2A_N0510_L3_P02/2024/03/01/NUTS0/TR/S2_L2A_N0510_L3_P02_20240301T000000_20240401T000000_NUTS0_TR_B08_10m.tiff",
       "raster:bands": [
         {
           "data_type": "float32",
@@ -174,7 +176,7 @@
           "full_width_half_max": 0.145
         }
       ],
-      "href": "https://nuts.s3.gra.io.cloud.ovh.net/SHAPED-MOSAIC/SENTINEL-2/S2_L2A_N0510_L3_P02/2024/03/01/NUTS0/TR/S2_L2A_N0510_L3_P02_20240301T000000_20240401T000000_NUTS0_TR_B11_20m_20m.tiff",
+      "href": "https://nuts.s3.gra.io.cloud.ovh.net/SHAPED-MOSAIC/SENTINEL-2/S2_L2A_N0510_L3_P02/2024/03/01/NUTS0/TR/S2_L2A_N0510_L3_P02_20240301T000000_20240401T000000_NUTS0_TR_B11_20m.tiff",
       "raster:bands": [
         {
           "data_type": "float32",
@@ -199,7 +201,7 @@
           "full_width_half_max": 0.145
         }
       ],
-      "href": "https://nuts.s3.gra.io.cloud.ovh.net/SHAPED-MOSAIC/SENTINEL-2/S2_L2A_N0510_L3_P02/2024/03/01/NUTS0/TR/S2_L2A_N0510_L3_P02_20240301T000000_20240401T000000_NUTS0_TR_B12_20m_20m.tiff",
+      "href": "https://nuts.s3.gra.io.cloud.ovh.net/SHAPED-MOSAIC/SENTINEL-2/S2_L2A_N0510_L3_P02/2024/03/01/NUTS0/TR/S2_L2A_N0510_L3_P02_20240301T000000_20240401T000000_NUTS0_TR_B12_20m.tiff",
       "raster:bands": [
         {
           "data_type": "float32",
@@ -224,7 +226,7 @@
           "full_width_half_max": 0.145
         }
       ],
-      "href": "https://nuts.s3.gra.io.cloud.ovh.net/SHAPED-MOSAIC/SENTINEL-2/S2_L2A_N0510_L3_P02/2024/03/01/NUTS0/TR/S2_L2A_N0510_L3_P02_20240301T000000_20240401T000000_NUTS0_TR_B8A_20m_20m.tiff",
+      "href": "https://nuts.s3.gra.io.cloud.ovh.net/SHAPED-MOSAIC/SENTINEL-2/S2_L2A_N0510_L3_P02/2024/03/01/NUTS0/TR/S2_L2A_N0510_L3_P02_20240301T000000_20240401T000000_NUTS0_TR_B8A_20m.tiff",
       "raster:bands": [
         {
           "data_type": "float32",
