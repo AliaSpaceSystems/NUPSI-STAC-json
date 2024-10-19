@@ -9,34 +9,34 @@
   ],
   "id": "S2_L2A_N0510_L3_P02_20240501T000000_20240601T000000_NUTS2_UKJ2",
   "bbox": [
-    -0.9563741094487073,
-    50.72283832103716,
-    0.8671316415194781,
-    51.4715206461537
+    -0.9564147776941443,
+    50.722795747243644,
+    0.8671202088144787,
+    51.47140341812313
   ],
   "geometry": {
     "type": "Polygon",
     "coordinates": [
       [
         [
-          -0.9563741094487073,
-          50.72283832103716
+          -0.9564147776941443,
+          50.722795747243644
         ],
         [
-          0.8671316415194781,
-          50.72283832103716
+          0.8671202088144787,
+          50.722795747243644
         ],
         [
-          0.8671316415194781,
-          51.4715206461537
+          0.8671202088144787,
+          51.47140341812313
         ],
         [
-          -0.9563741094487073,
-          51.4715206461537
+          -0.9564147776941443,
+          51.47140341812313
         ],
         [
-          -0.9563741094487073,
-          50.72283832103716
+          -0.9564147776941443,
+          50.722795747243644
         ]
       ]
     ]
@@ -110,6 +110,131 @@
           "nodata": "nan"
         }
       ]
+    },
+    "B04": {
+      "title": "Band 4 (red) BOA reflectance",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "gsd": 10,
+      "eo:bands": [
+        {
+          "name": "B04",
+          "common_name": "red",
+          "center_wavelength": 0.6645,
+          "full_width_half_max": 0.038
+        }
+      ],
+      "href": "https://nuts.s3.gra.io.cloud.ovh.net/SHAPED-MOSAIC/SENTINEL-2/S2_L2A_N0510_L3_P02/2024/05/01/NUTS2/UKJ2/S2_L2A_N0510_L3_P02_20240501T000000_20240601T000000_NUTS2_UKJ2_B04_10m.vrt",
+      "raster:bands": [
+        {
+          "data_type": "float32",
+          "spatial_resolution": 10,
+          "bits_per_sample": 32,
+          "nodata": "nan"
+        }
+      ]
+    },
+    "B08": {
+      "title": "Band 8 (nir) BOA reflectance",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "gsd": 10,
+      "eo:bands": [
+        {
+          "name": "B08",
+          "common_name": "nir",
+          "center_wavelength": 0.8351,
+          "full_width_half_max": 0.145
+        }
+      ],
+      "href": "https://nuts.s3.gra.io.cloud.ovh.net/SHAPED-MOSAIC/SENTINEL-2/S2_L2A_N0510_L3_P02/2024/05/01/NUTS2/UKJ2/S2_L2A_N0510_L3_P02_20240501T000000_20240601T000000_NUTS2_UKJ2_B08_10m.vrt",
+      "raster:bands": [
+        {
+          "data_type": "float32",
+          "spatial_resolution": 10,
+          "bits_per_sample": 32,
+          "nodata": "-3.4028235e+38"
+        }
+      ]
+    },
+    "B11": {
+      "title": "Band 8 (nir) BOA reflectance",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "gsd": 10,
+      "eo:bands": [
+        {
+          "name": "B11",
+          "common_name": "nir",
+          "center_wavelength": 0.8351,
+          "full_width_half_max": 0.145
+        }
+      ],
+      "href": "https://nuts.s3.gra.io.cloud.ovh.net/SHAPED-MOSAIC/SENTINEL-2/S2_L2A_N0510_L3_P02/2024/05/01/NUTS2/UKJ2/S2_L2A_N0510_L3_P02_20240501T000000_20240601T000000_NUTS2_UKJ2_B11_20m.vrt",
+      "raster:bands": [
+        {
+          "data_type": "float32",
+          "spatial_resolution": 10,
+          "bits_per_sample": 32,
+          "nodata": "-3.4028235e+38"
+        }
+      ]
+    },
+    "B12": {
+      "title": "Band 8 (nir) BOA reflectance",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "gsd": 10,
+      "eo:bands": [
+        {
+          "name": "B12",
+          "common_name": "nir",
+          "center_wavelength": 0.8351,
+          "full_width_half_max": 0.145
+        }
+      ],
+      "href": "https://nuts.s3.gra.io.cloud.ovh.net/SHAPED-MOSAIC/SENTINEL-2/S2_L2A_N0510_L3_P02/2024/05/01/NUTS2/UKJ2/S2_L2A_N0510_L3_P02_20240501T000000_20240601T000000_NUTS2_UKJ2_B12_20m.vrt",
+      "raster:bands": [
+        {
+          "data_type": "float32",
+          "spatial_resolution": 10,
+          "bits_per_sample": 32,
+          "nodata": "-3.4028235e+38"
+        }
+      ]
+    },
+    "B8A": {
+      "title": "Band 8 (nir) BOA reflectance",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "gsd": 10,
+      "eo:bands": [
+        {
+          "name": "B8A",
+          "common_name": "nir",
+          "center_wavelength": 0.8351,
+          "full_width_half_max": 0.145
+        }
+      ],
+      "href": "https://nuts.s3.gra.io.cloud.ovh.net/SHAPED-MOSAIC/SENTINEL-2/S2_L2A_N0510_L3_P02/2024/05/01/NUTS2/UKJ2/S2_L2A_N0510_L3_P02_20240501T000000_20240601T000000_NUTS2_UKJ2_B8A_20m.vrt",
+      "raster:bands": [
+        {
+          "data_type": "float32",
+          "spatial_resolution": 10,
+          "bits_per_sample": 32,
+          "nodata": "-3.4028235e+38"
+        }
+      ]
     }
   },
   "virtual:assets": {
@@ -121,7 +246,12 @@
       ],
       "href": [
         "#B02",
-        "#B03"
+        "#B03",
+        "#B04",
+        "#B08",
+        "#B11",
+        "#B12",
+        "#B8A"
       ]
     }
   }

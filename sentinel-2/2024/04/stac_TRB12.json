@@ -16,7 +16,7 @@
     ]
   },
   "properties": {
-    "datetime": "2024-01-21T00:00:00Z",
+    "datetime": "2024-04-01T00:00:00Z",
     "constellation": "sentinel-2",
     "instruments": [
       "msi"
@@ -29,7 +29,9 @@
     "sentinel:grid_square": "VB",
     "sentinel:sequence": "0",
     "sentinel:product_id": "",
-    "sentinel:valid_cloud_cover": true
+    "sentinel:valid_cloud_cover": true,
+    "start_datetime": "2024-04-01T00:00:00+00:00",
+    "end_datetime": "2024-05-01T00:00:00+00:00"
   },
   "collection": "sentinel-s2-l2a-cogs",
   "assets": {
@@ -48,7 +50,32 @@
           "full_width_half_max": 0.145
         }
       ],
-      "href": "https://nuts.s3.gra.io.cloud.ovh.net/SHAPED-MOSAIC/SENTINEL-2/S2_L2A_N0510_L3_P02/2024/04/01/NUTS3/TRB12/S2_L2A_N0510_L3_P02_20240401T000000_20240501T000000_NUTS3_TRB12_B02_10m.vrt",
+      "href": "https://nuts.s3.gra.io.cloud.ovh.net/SHAPED-MOSAIC/SENTINEL-2/S2_L2A_N0510_L3_P02/2024/04/01/NUTS3/TRB12/S2_L2A_N0510_L3_P02_20240401T000000_20240501T000000_NUTS3_TRB12_B12_20m.vrt",
+      "raster:bands": [
+        {
+          "data_type": "float32",
+          "spatial_resolution": 10,
+          "bits_per_sample": 32,
+          "nodata": "-3.4028235e+38"
+        }
+      ]
+    },
+    "B8A": {
+      "title": "Band 8 (nir) BOA reflectance",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "gsd": 10,
+      "eo:bands": [
+        {
+          "name": "B8A",
+          "common_name": "nir",
+          "center_wavelength": 0.8351,
+          "full_width_half_max": 0.145
+        }
+      ],
+      "href": "https://nuts.s3.gra.io.cloud.ovh.net/SHAPED-MOSAIC/SENTINEL-2/S2_L2A_N0510_L3_P02/2024/04/01/NUTS3/TRB12/S2_L2A_N0510_L3_P02_20240401T000000_20240501T000000_NUTS3_TRB12_B8A_20m.vrt",
       "raster:bands": [
         {
           "data_type": "float32",
@@ -67,7 +94,8 @@
         1
       ],
       "href": [
-        "#B12"
+        "#B12",
+        "#B8A"
       ]
     }
   }
